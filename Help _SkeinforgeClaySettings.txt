@@ -1,0 +1,5 @@
+SKEINFORGE SAMPLE CLAY SETTINGS FOR REPETIER-HOST
+
+The folder 'Clay 8' contains sample settings for the gcode slicing engine Skeinforge. The folder needs to be pasted into the 'profiles' directory of Skeinforge as this is where slicing profiles are stored. If you haven’t started Skeinforge before, this directory will not exist so open 'configure' on the Skeinforge tab in Repetier-Host to get this established. Skeinforge creates this directory in your home directory with the name .skeinforge. You need to then select the profiles subdirectory, in that is an 'extrusion' folder, copy the Clay 8 folder into that. When you restart Repetier-Host and select Skeinforge in the Slicer tab hopefully Clay 8 will be found in the Profile drop down
+
+Windows path for setting: C:\Users\'Name'\.skeinforge\profiles\extrusion\Clay 8
