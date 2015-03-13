@@ -1,0 +1,100 @@
+[print]
+name = Clay Scice .8
+defaultQuality = Z8B0YuUZGWHpSXSbvE64Jz4eTsmsqKBa
+travelSpeedMin = 30
+travelSpeedMax = 50
+firstLayerSpeedMin = 30
+firstLayerSpeedMax = 50
+infillSpeedMin = 30
+infillSpeedMax = 50
+infillType = 0
+innerPerimeterMin = 30
+innerPerimeterMax = 50
+outerPerimeterMin = 30
+outerPerimeterMax = 50
+printSpeedMin = 30
+printSpeedMax = 50
+nozzleDiameter = 0
+gcodeFlavour = 0
+retractionCombing = True
+multiVolumeOverlap = 0
+cutOffObjectBottom = 0
+shellThickness = 0.1
+infillTopBottomThickness = 1
+infillDensityPercent = 20
+supportType = 0
+platformAdhesion = 0
+dualExtrusion = 0
+wipeAndPrimeTower = False
+oozeShield = False
+enableRetraction = False
+retractionSpeed = 40
+retractionDistance = 4
+multiExtruderSwitchAmount = 16
+startGCode = """
+G21
+G90 ; Absolute positioning
+G28 ; Home extruder
+G1  F{Z_TRAVEL_SPEED}
+"""
+endGCode = """
+;End GCode
+G91 ;relative positioning
+G28 ;move to endstops
+G90 ;absolute positioning
+"""
+preSwitchExtruderCode = 
+postSwitchExtruderCode = 
+wipeAndPrimeTowerVolume = 15
+retractionMinimumTravel = 1.5
+minimumExtrusionBeforeRetract = 0.02
+zhop = 0
+skirtLineCount = 0
+skirtDistance = 0
+skirtMinimumLength = 150
+solidInfillTop = False
+solidInfillBottom = False
+infillOverlapPercent = 0
+supportStructureType = 0
+supportOverhang = 60
+supportFillPercent = 0
+supportDistanceXY = 0.7
+supportDistanceZ = 0.15
+supportExtruder = -1
+spiralizeOuterContour = False
+brimWidth = 10
+raftExtraMargin = 0
+raftLineSpacing = 1
+raftBaseThickness = 0
+raftBaseWidth = 0.7
+raftInterfaceThickness = 1
+raftInterfaceLineWidth = 0.2
+raftAirGap = 0
+raftAirGapLayer0 = 0
+raftSurfaceLayer = 1
+fixCombineEverythingA = True
+fixCombineEverythingB = False
+fixKeepOpenFaces = True
+fixExtensiveStitching = False
+fanFullAtHeight = 0.5
+minimumSpeed = 10
+coolHeadLift = False
+numQuality = 3
+[quality_0]
+name = 0.2 mm
+signature = yCmZ6XW8YSLJI9BZLK6P362gBN0VU8xU
+layerHeight = 0.2
+layer0widthPercent = 100
+firstLayerHeight = 0.3
+[quality_1]
+name = 0.6 mm
+signature = xUzdSzTBUSodpEyfZ2xbKdg4Q5CJ41W4
+layerHeight = 0.6
+layer0widthPercent = 100
+firstLayerHeight = 0.6
+[quality_2]
+name = 0.8 mm
+signature = Z8B0YuUZGWHpSXSbvE64Jz4eTsmsqKBa
+layerHeight = 0.8
+layer0widthPercent = 100
+firstLayerHeight = 0.8
